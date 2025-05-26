@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomeActivity">
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:padding="25dp"
+            android:elevation="22dp"
+            android:background="@drawable/sp_ractangle_root">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/baseline_person_24"
+                android:id="@+id/user"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="Halo!"
+                android:layout_below="@+id/user"
+                android:id="@+id/namaUser"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#E8E9E8"
+                android:id="@+id/separator"
+                android:layout_below="@+id/namaUser"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="Pw Mu"
+                android:id="@+id/sandi"
+                android:layout_below="@+id/separator"
+                />
+            <Button
+                android:layout_width="100dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sandi"
+                android:gravity="center"
+                android:background="@drawable/btn_ractangle_root"
+                android:text="Log Out"
+                android:id="@+id/btnLogout"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
